@@ -30,8 +30,8 @@
 
 
 .navbar.navbar-default {
-  background: -webkit-linear-gradient(left, #ed7924, #003B71); /* Chrome10+, Safari5.1+ */
-  background: linear-gradient(left, #ed7924, #003B71);
+  background: -webkit-linear-gradient(left, #ed7924, #ed7924); /* Chrome10+, Safari5.1+ */
+  background: linear-gradient(left, #ed7924, #ed7924);
   border: None;
 }
 
