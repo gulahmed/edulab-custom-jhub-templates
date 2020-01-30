@@ -1,0 +1,18 @@
+{% extends "templates/login.html" %}
+{% set announcement = '' %}
+
+{% block main %}
+<div class="container text-center educloudlab">
+    <h1>{{ educloudlab_hub_title or 'EduCloudLab Hub' }}</h1>
+    <h2>{{ educloudlab_hub_subtitle }}</h2>
+    <p>
+      {% if educloudlab_welcome %}
+      {{ (educloudlab_welcome | safe) }}
+      {% else %}
+      Welcome to this EduCloudLab Hub. For more information about our service,
+      visit <a href="http://labs.lsdda.com">labs.lsdda.com</a>.
+      {% endif %}
+    </p>
+</div>
+{{ super() }}
+{% endblock %}
